@@ -44,34 +44,31 @@ public class Dicegame {
 			System.out.println("Your goal number is: " + goal);
 			System.out.println("Keep rolling...");
 
-			//True Condition
-			while (true) {
-				int newDie1 = random.nextInt(6) + 1;
-				int newDie2 = random.nextInt(6) + 1;
-				int newDie3 = random.nextInt(6) + 1;
-				int newDie4 = random.nextInt(6) + 1;
-				int newSum = newDie1 + newDie2 + newDie3 + newDie4;
+			int newDie1 = random.nextInt(6) + 1;
+			int newDie2 = random.nextInt(6) + 1;
+			int newDie3 = random.nextInt(6) + 1;
+			int newDie4 = random.nextInt(6) + 1;
+			int newSum = newDie1 + newDie2 + newDie3 + newDie4;
 
-				System.out.println();
-				System.out.println("Second Roll:");
-				System.out.println("Die 1: " + newDie1);
-				System.out.println("Die 2: " + newDie2);
-				System.out.println("Die 3: " + newDie3);
-				System.out.println("Die 4: " + newDie4);
-				System.out.println("Sum: " + newSum);
+			System.out.println();
+			System.out.println("Second Roll:");
+			System.out.println("Die 1: " + newDie1);
+			System.out.println("Die 2: " + newDie2);
+			System.out.println("Die 3: " + newDie3);
+			System.out.println("Die 4: " + newDie4);
+			System.out.println("Sum: " + newSum);
 
-				//If newsum == goal player wins
-				if (newSum == goal) {
-					System.out.println("You rolled the goal number. You Win!!!!");
-					break;
-				}
-				// else player lose
-				else {
-					System.out.println("You didn't roll the goal number. You Lose!!!!");
-					break;
-				}
+			// If newsum == goal player wins
+			if (newSum == goal) {
+				System.out.println("You rolled the goal number. You Win!!!!");
 
 			}
+			// else player lose
+			else {
+				System.out.println("You didn't roll the goal number. You Lose!!!!");
+
+			}
+
 		}
 
 	}
